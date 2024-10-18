@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Recipient;
+use App\Http\Controllers\RecipientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::resource('recipients', RecipientController::class);
