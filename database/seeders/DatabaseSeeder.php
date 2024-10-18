@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         \App\Models\Recipient::factory(10)->create();
+        \App\Models\Sender::factory(10)->create();
     }
 }

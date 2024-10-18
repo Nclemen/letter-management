@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::resource('recipients', RecipientController::class);
+Route::resource('recipients', RecipientController::class);Route::resource('senders', SenderController::class);
