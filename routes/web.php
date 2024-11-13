@@ -1,7 +1,8 @@
 <?php
 
-use App\Models\Recipient;
+use App\Http\Controllers\LetterController;
 use App\Http\Controllers\RecipientController;
+use App\Http\Controllers\SenderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::resource('recipients', RecipientController::class);Route::resource('senders', SenderController::class);
+Route::resource('recipients', RecipientController::class);
+Route::resource('senders', SenderController::class);
+Route::resource('letters', LetterController::class);
